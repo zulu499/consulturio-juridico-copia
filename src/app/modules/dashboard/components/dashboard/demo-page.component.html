@@ -1,0 +1,7 @@
+<div class="container">
+    @if (isLogged) {
+    <p class="message" [class.light-title]="theme() === 'dark'">Bienvenido!</p>
+    } @else {
+    <p class="message" [class.light-title]="theme() === 'dark'">Página principal</p>
+    }
+</div>

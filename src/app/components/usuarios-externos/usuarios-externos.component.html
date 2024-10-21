@@ -1,0 +1,47 @@
+<!-- Incluyendo Font Awesome para los íconos -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+/>
+
+<div class="usuarios-externos-container">
+  <h2>Usuarios externos</h2>
+  <input type="text" placeholder="Consultar usuario" class="search-box" />
+
+  <button class="btn-expedientes">Ver expedientes</button>
+  <button class="btn-add"><i class="fas fa-plus"></i></button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Documento</th>
+        <th>Nombre usuario</th>
+        <th>Teléfono</th>
+        <th>Correo</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let usuario of usuarios">
+        <td>{{ usuario.documento }}</td>
+        <td>{{ usuario.nombre }}</td>
+        <td>{{ usuario.telefono }}</td>
+        <td>{{ usuario.correo }}</td>
+        <td>
+          <div class="icon-container">
+            <button class="icon-button"><i class="fas fa-file-alt"></i></button>
+            <button class="icon-button"><i class="fas fa-download"></i></button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="pagination">
+    <span>&laquo;</span>
+    <span class="page-number">1</span>
+    <span class="page-number">2</span>
+    <span class="page-number">3</span>
+    <span>&raquo;</span>
+  </div>
+</div>

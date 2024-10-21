@@ -1,0 +1,63 @@
+<div class="expedientes-container">
+  <!-- Título de la sección -->
+  <h2>Gestión de expedientes</h2>
+
+  <!-- Barra de búsqueda -->
+  <div class="search-bar">
+    <input type="text" placeholder="Buscar expediente" />
+  </div>
+
+  <!-- Tabla de expedientes -->
+  <table>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Área</th>
+        <th>Nombre usuario</th>
+        <th>Síntesis</th>
+        <th>Pretensión</th>
+        <th>Demandado</th>
+        <th>Estado</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let expediente of expedientes">
+        <td>{{ expediente.id }}</td>
+        <td>{{ expediente.area }}</td>
+        <td>{{ expediente.nombreUsuario }}</td>
+        <td>{{ expediente.sintesis }}</td>
+        <td>{{ expediente.pretension }}</td>
+        <td>{{ expediente.demandado }}</td>
+        <td>{{ expediente.estado }}</td>
+        <td>
+          <button
+            class="action-btn purple-btn"
+            (click)="verResumen(expediente)"
+          >
+            👁️
+          </button>
+          <button
+            class="action-btn green-btn"
+            (click)="agregarAnotacion(expediente)"
+          >
+            ➕
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Botones adicionales debajo de la tabla -->
+  <div class="action-buttons">
+    <button class="btn-ver purple-btn">👁️ Ver resumen</button>
+    <button class="btn-agregar green-btn">➕ Agregar anotación</button>
+  </div>
+
+  <!-- Paginación -->
+  <div class="pagination">
+    <button>❮</button>
+    <span *ngFor="let page of pages">{{ page }}</span>
+    <button>❯</button>
+  </div>
+</div>

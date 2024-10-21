@@ -1,0 +1,137 @@
+/* Estilo general */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Contenedor principal */
+  .expedientes-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin: auto;
+    min-height: 100vh; /* Asegura que ocupe toda la pantalla */
+  }
+  
+  /* Estilo del header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 50px;
+  }
+  
+  .header img.logo {
+    height: 50px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .btn-logout {
+    background-color: #4c6ef5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Barra de búsqueda */
+  .search-bar input {
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Tabla */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  thead {
+    background-color: #4c6ef5;
+    color: white;
+  }
+  
+  td, th {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Botones de acción dentro de la tabla */
+  .action-btn {
+    padding: 5px;
+    margin: 0 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .purple-btn {
+    background-color: #9b59b6;
+    color: white;
+  }
+  
+  .green-btn {
+    background-color: #2ecc71;
+    color: white;
+  }
+  
+  /* Botones adicionales debajo de la tabla */
+  .action-buttons {
+    display: flex;
+    justify-content: flex-start; /* Alinea los botones a la izquierda */
+    padding-left: 20px; /* Espacio a la izquierda */
+    margin-bottom: 20px; /* Separación del contenido inferior */
+  }
+  
+  .btn-agregar, .btn-ver {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Botones individuales */
+  .btn-agregar {
+    background-color: #2ecc71;
+    color: white;
+  }
+  
+  .btn-ver {
+    background-color: #9b59b6;
+    color: white;
+  }
+  
+  /* Paginación */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Estilo del footer */
+  .footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+    margin-top: auto;
+  }
+  

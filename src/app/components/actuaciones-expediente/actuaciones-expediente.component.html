@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+<div class="actuaciones-container">
+  <h2>Actuaciones previas expediente</h2>
+  <ul>
+    <li><strong>Nombre usuario:</strong> {{ expediente?.nombreUsuario }}</li>
+    <li><strong>Área:</strong> {{ expediente?.area }}</li>
+    <li><strong>Estado expediente:</strong> {{ expediente?.estado }}</li>
+  </ul>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Fecha</th>
+        <th>Nombre usuario</th>
+        <th>Asunto</th>
+        <th>Documentos</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let actuacion of expediente?.actuaciones">
+        <td>{{ actuacion.fecha }}</td>
+        <td>{{ actuacion.nombreUsuario }}</td>
+        <td>{{ actuacion.asunto }}</td>
+        <td>
+          <div class="document-icons">
+            <button class="icon-button">
+              <i class="fas fa-file-alt"></i>
+            </button>
+            <button class="icon-button">
+              <i class="fas fa-download"></i>
+            </button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+

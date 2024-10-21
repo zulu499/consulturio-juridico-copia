@@ -1,0 +1,17 @@
+<div class="modal-container">
+    <div class="modal-content">
+      <h2>Detalles del expediente</h2>
+      <ul>
+        <li><strong>Datos personales:</strong> {{ expediente?.datosPersonales }}</li>
+        <li><strong>Síntesis:</strong> {{ expediente?.sintesis }}</li>
+        <li><strong>Pretensión:</strong> {{ expediente?.pretension }}</li>
+        <li><strong>Documentos aportados:</strong> {{ expediente?.documentos }}</li>
+        <li><strong>Observación:</strong> {{ expediente?.observacion }}</li>
+      </ul>
+      <div class="modal-footer">
+        <button class="green-btn" (click)="actuaciones()">Actuaciones</button>
+        <button class="red-btn" (click)="editar()">Editar expediente</button>
+      </div>
+    </div>
+  </div>
+  

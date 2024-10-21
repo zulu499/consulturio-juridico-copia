@@ -1,0 +1,31 @@
+<div class="ver-expedientes-container">
+  <h2>Gestión de expedientes</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Área</th>
+        <th>Nombre usuario</th>
+        <th>Síntesis</th>
+        <th>Pretensión</th>
+        <th>Demandado</th>
+        <th>Estado</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let expediente of usuario?.expedientes">
+        <td>{{ expediente.id }}</td>
+        <td>{{ expediente.area }}</td>
+        <td>{{ expediente.nombreUsuario }}</td>
+        <td>{{ expediente.sintesis }}</td>
+        <td>{{ expediente.pretension }}</td>
+        <td>{{ expediente.demandado }}</td>
+        <td>{{ expediente.estado }}</td>
+        <td>
+          <button class="action-btn purple-btn">👁️</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

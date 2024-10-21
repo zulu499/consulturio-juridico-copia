@@ -1,0 +1,134 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header */
+  .header {
+    background-color: white;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .header img.logo {
+    height: 50px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .btn-logout {
+    background-color: #4c6ef5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Contenedor principal */
+  .usuarios-externos-container {
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    max-width: 80%;
+  }
+  
+  .search-box {
+    padding: 10px;
+    width: 40%;
+    margin-bottom: 20px;
+  }
+  
+  .btn-expedientes {
+    background-color: #6f42c1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-add {
+    background-color: #8bc34a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  /* Tabla */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  thead {
+    background-color: #4c6ef5;
+    color: white;
+  }
+  
+  td, th {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .icon-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .icon-button {
+    background-color: #4c6ef5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  .icon-button i {
+    font-size: 16px;
+  }
+  
+  /* Paginación */
+  .pagination {
+    margin-top: 20px;
+  }
+  
+  .pagination span {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .page-number {
+    color: #4c6ef5;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+  }
+  

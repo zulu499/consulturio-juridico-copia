@@ -1,0 +1,14 @@
+<div class="grid">
+    <app-header class="header" (loginOrLogoutEvent)="handleLoginOrLogoutEvent($event)"></app-header>
+    @if (!showSpinner) {
+    <div class="content" [class.content-dark]="theme() === 'dark'">
+        <router-outlet />
+    </div>
+    } @else {
+    <div class="spinner-container" [class.content-dark]="theme() === 'dark'">
+        <mat-spinner [diameter]="this.spinnerDiameter" color="primary"></mat-spinner>
+        <p class="loading-message light-text">Cargando...</p>
+    </div>
+    }
+    <app-footer class="footer"></app-footer>
+</div>

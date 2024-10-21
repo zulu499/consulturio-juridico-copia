@@ -1,0 +1,111 @@
+/* Reset básico */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estructura principal */
+  .header {
+    background-color: white;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .header img.logo {
+    height: 50px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .btn-logout {
+    background-color: #4c6ef5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .actuaciones-container {
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    max-width: 80%;
+  }
+  
+  .actuaciones-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .actuaciones-container ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  thead {
+    background-color: #4c6ef5;
+    color: white;
+  }
+  
+  td, th {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .document-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .icon-button {
+    background-color: #4c6ef5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  .icon-button i {
+    font-size: 16px;
+  }
+  
+  .footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+  }
+  
+  /* Flexbox para forzar que el footer esté abajo */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .actuaciones-container {
+    flex-grow: 1;
+  }
+  
